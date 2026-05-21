@@ -27,17 +27,17 @@ html, body {
 }
 
 :root {
-  --paper:      oklch(96%  0.012 155);
-  --paper-2:    oklch(93%  0.014 155);
-  --paper-3:    oklch(89%  0.016 155);
-  --rule:       oklch(80%  0.012 155);
-  --neutral:    oklch(56%  0.010 155);
-  --muted:      oklch(42%  0.010 145);
-  --ink:        oklch(18%  0.014 150);
-  --accent:     oklch(32%  0.16  155);
-  --accent-mid: oklch(44%  0.14  155);
-  --accent-light: oklch(72% 0.10 155);
-  --focus:      oklch(55%  0.19  155);
+  --paper:      oklch(12%  0.010 155);
+  --paper-2:    oklch(16%  0.012 155);
+  --paper-3:    oklch(20%  0.014 155);
+  --rule:       oklch(26%  0.010 155);
+  --neutral:    oklch(50%  0.010 155);
+  --muted:      oklch(66%  0.010 145);
+  --ink:        oklch(93%  0.008 150);
+  --accent:     oklch(62%  0.18  155);
+  --accent-mid: oklch(54%  0.16  155);
+  --accent-light: oklch(74% 0.10 155);
+  --focus:      oklch(67%  0.19  155);
 
   --font-display: "Newsreader", ui-serif, Georgia, serif;
   --font-body:    "Geist", ui-sans-serif, system-ui, sans-serif;
@@ -85,7 +85,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem clamp(1rem, 4vw, 3rem);
-  background: oklch(96% 0.012 155 / 0.92);
+  background: oklch(12% 0.010 155 / 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 0.5px solid var(--rule);
 }
@@ -262,7 +262,7 @@ html, body {
 }
 .cal-day:hover { background: var(--paper-3); }
 .cal-day.empty { color: transparent; cursor: default; }
-.cal-day.trip-day { background: oklch(44% 0.14 155 / 0.12); color: var(--accent-mid); font-weight: 500; }
+.cal-day.trip-day { background: oklch(62% 0.14 155 / 0.15); color: var(--accent-mid); font-weight: 500; }
 .cal-day.trip-start, .cal-day.trip-end {
   background: var(--accent);
   color: var(--paper);
@@ -371,7 +371,7 @@ html, body {
 .demo-panel-badge {
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  background: oklch(44% 0.14 155 / 0.12);
+  background: oklch(62% 0.14 155 / 0.15);
   color: var(--accent-mid);
   padding: 0.2rem 0.6rem;
   border-radius: 99px;
@@ -420,7 +420,7 @@ html, body {
 }
 .cal-full-day:hover { background: var(--paper-3); }
 .cal-full-day.empty { cursor: default; }
-.cal-full-day.trip { background: oklch(44% 0.14 155 / 0.10); color: var(--accent-mid); }
+.cal-full-day.trip { background: oklch(62% 0.14 155 / 0.15); color: var(--accent-mid); }
 .cal-full-day.trip::after {
   content: '';
   width: 4px;
@@ -605,7 +605,7 @@ html, body {
   font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  background: oklch(44% 0.14 155 / 0.1);
+  background: oklch(62% 0.14 155 / 0.15);
   color: var(--accent-mid);
   padding: 0.15rem 0.5rem;
   border-radius: 99px;
@@ -618,7 +618,7 @@ html, body {
 
 /* Route demo */
 .route-map-placeholder {
-  background: oklch(88% 0.018 155);
+  background: oklch(17% 0.018 155);
   border-radius: 5px;
   border: 0.5px solid var(--rule);
   height: 160px;
@@ -670,9 +670,9 @@ html, body {
   padding: 0.1rem 0.4rem;
   border-radius: 99px;
 }
-.diff-easy { background: oklch(60% 0.14 155 / 0.12); color: oklch(35% 0.14 155); }
-.diff-moderate { background: oklch(68% 0.15 75 / 0.15); color: oklch(38% 0.16 75); }
-.diff-hard { background: oklch(60% 0.18 30 / 0.12); color: oklch(38% 0.18 30); }
+.diff-easy { background: oklch(62% 0.14 155 / 0.18); color: oklch(72% 0.14 155); }
+.diff-moderate { background: oklch(68% 0.15 75 / 0.18); color: oklch(75% 0.16 75); }
+.diff-hard { background: oklch(60% 0.18 30 / 0.18); color: oklch(75% 0.18 30); }
 
 /* ── OVERVIEW GRID ── */
 .overview-section {
@@ -1095,7 +1095,7 @@ html, body {
               <span style="width:10px;height:10px;background:var(--accent);border-radius:50%;display:inline-block;"></span> Launch / takeout
             </span>
             <span style="display:flex;align-items:center;gap:0.375rem;font-size:0.7rem;color:var(--muted);font-family:var(--font-mono);">
-              <span style="width:10px;height:10px;background:oklch(44% 0.14 155 / 0.15);border-radius:2px;display:inline-block;"></span> Trip days
+              <span style="width:10px;height:10px;background:oklch(62% 0.14 155 / 0.18);border-radius:2px;display:inline-block;"></span> Trip days
             </span>
           </div>
         </div>
@@ -1309,10 +1309,10 @@ html, body {
               <ellipse cx="370" cy="110" rx="25" ry="18" fill="oklch(64% 0.12 210 / 0.35)" stroke="oklch(44% 0.12 210 / 0.5)" stroke-width="0.5"/>
 
               <!-- Portage paths -->
-              <path d="M105 75 C120 70, 108 65, 113 65" stroke="oklch(35% 0.12 145)" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
-              <path d="M210 68 C225 80, 218 95, 220 105" stroke="oklch(35% 0.12 145)" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
-              <path d="M218 113 C235 118, 220 80, 220 75" stroke="oklch(35% 0.12 145)" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
-              <path d="M348 80 C358 90, 355 100, 345 108" stroke="oklch(35% 0.12 145)" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+              <path d="M105 75 C120 70, 108 65, 113 65" stroke="oklch(68% 0.12 145)" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+              <path d="M210 68 C225 80, 218 95, 220 105" stroke="oklch(68% 0.12 145)" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+              <path d="M218 113 C235 118, 220 80, 220 75" stroke="oklch(68% 0.12 145)" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+              <path d="M348 80 C358 90, 355 100, 345 108" stroke="oklch(68% 0.12 145)" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
 
               <!-- Portage markers -->
               <circle cx="109" cy="70" r="5" fill="oklch(32% 0.16 155)" stroke="oklch(85% 0.01 155)" stroke-width="1"/>
@@ -1328,11 +1328,11 @@ html, body {
               <text x="348" y="98" text-anchor="middle" font-size="6" fill="oklch(95% 0.01 155)" font-family="system-ui">4</text>
 
               <!-- Lake labels -->
-              <text x="60" y="83" text-anchor="middle" font-size="7.5" fill="oklch(28% 0.12 210)" font-family="system-ui" font-style="italic">Lake One</text>
-              <text x="165" y="68" text-anchor="middle" font-size="7" fill="oklch(28% 0.12 210)" font-family="system-ui" font-style="italic">Lake Two</text>
-              <text x="165" y="107" text-anchor="middle" font-size="6.5" fill="oklch(28% 0.12 210)" font-family="system-ui" font-style="italic">Ima Lake</text>
-              <text x="285" y="78" text-anchor="middle" font-size="7.5" fill="oklch(28% 0.12 210)" font-family="system-ui" font-style="italic">Lake Three</text>
-              <text x="370" y="113" text-anchor="middle" font-size="6" fill="oklch(28% 0.12 210)" font-family="system-ui" font-style="italic">Knife L.</text>
+              <text x="60" y="83" text-anchor="middle" font-size="7.5" fill="oklch(74% 0.10 210)" font-family="system-ui" font-style="italic">Lake One</text>
+              <text x="165" y="68" text-anchor="middle" font-size="7" fill="oklch(74% 0.10 210)" font-family="system-ui" font-style="italic">Lake Two</text>
+              <text x="165" y="107" text-anchor="middle" font-size="6.5" fill="oklch(74% 0.10 210)" font-family="system-ui" font-style="italic">Ima Lake</text>
+              <text x="285" y="78" text-anchor="middle" font-size="7.5" fill="oklch(74% 0.10 210)" font-family="system-ui" font-style="italic">Lake Three</text>
+              <text x="370" y="113" text-anchor="middle" font-size="6" fill="oklch(74% 0.10 210)" font-family="system-ui" font-style="italic">Knife L.</text>
 
               <!-- Entry point star -->
               <polygon points="60,48 62,54 68,54 63,58 65,64 60,60 55,64 57,58 52,54 58,54" fill="oklch(52% 0.18 75)" opacity="0.9"/>
